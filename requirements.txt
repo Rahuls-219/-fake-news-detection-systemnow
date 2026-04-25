@@ -1,0 +1,26 @@
+# VeriLens AI — requirements.txt
+# Install: pip install -r requirements.txt
+
+# ── Core ML ───────────────────────────────────────────────────────────────────
+scikit-learn
+numpy
+pandas
+joblib
+scipy
+
+# ── LLM ──────────────────────────────────────────────────────────────────────
+openai         # Set OPENAI_API_KEY env var
+
+# ── Web / verification ────────────────────────────────────────────────────────
+wikipedia
+requests
+beautifulsoup4
+lxml         # faster BS4 parser
+
+# ── UI ────────────────────────────────────────────────────────────────────────
+streamlit
+
+# ── Optional: sentence-transformers for semantic embeddings ───────────────────
+# Uncomment for GPU-powered semantic similarity (improves verifier.py)
+# sentence-transformers
+# torch
